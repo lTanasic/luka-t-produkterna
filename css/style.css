@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+body {
+    background-color: black;
+}
+
+header {
+    border-right: 0px;
+    border-left: 0px;
+    border-top: 0px;
+    border-bottom: 1px;
+    border-style: solid;
+    border-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: inherit;
+    flex-wrap: wrap;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+
+.index-main-image {
+    background-image: url('/img/grey-wood-background.jpeg');
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 800px;
+    width: 100%;
+    opacity: 80%;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+}
+
+.index-main-image p {
+    margin-bottom: 200px;
+}
+
+.index-main-image h1, .index-main-image p {
+    margin-left: 200px;
+}
+
+.image {
+    width: 300px;
+}
+
+.navbar {
+    overflow: hidden;
+    display: flex;
+    background-color: inherit;
+}
+
+.nav-list {
+    flex-wrap: wrap;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 0px 20px;
+    font-size: 20px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+
+li a:hover {
+    text-shadow: 1.5px 1.5px purple;
+}
+
+h1, li, a, button, p, h2 {
+    color: white;
+    text-decoration: none;
+    font-family: 'Rubik', sans-serif;;
+    z-index: 10;
+}
+
+.nav-logo {
+    justify-content: flex-start;
+    align-items: center;
+    width: 150px;
+}
+
+
+li {
+    list-style: none;
+}
+
+header button {
+    justify-content: space-between;
+    margin-right: 10px;
+    background-color: grey;
+    border-style: none;
+    border-radius: 50px;
+    cursor: pointer;
+    font-size: 20px;
+    float: right;
+    padding: 10px 20px 10px 20px;
+}
+
+header button:hover {
+    background-color: white;
+    color: black;
+}
+
+.active {
+    color: white;
+    border: 2px;
+    border-top-color: black;
+    border-left-color: black;
+    border-right-color: black;
+    border-style: solid;
+    animation-name: navbaranimation;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes navbaranimation {
+    0% {border-bottom-color: white;}
+    25% {border-bottom-color: grey;}
+    100% {border-bottom-color: white;}
+}
+
+.active-button {
+    color: black;
+    background-color: grey;
+}
+
+.image-button {
+    cursor: pointer;
+    padding: 0px;
+    margin: 0px;
+    border-color: inherit;
+    width: 300px;
+    height: 300px;
+    border-style: none;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+/* INDEX PAGE*/
+.container-row {
+    display: flex;
+    background-color: rgb(44, 44, 44);
+    height: 400px;
+    width: 100%;
+    align-items: center;
+    position: relative;
+    overflow-x: scroll;
+}
+
+.index-product {
+    display: flex;
+    flex-direction: column;
+    background-color: inherit;
+    height: 380px;
+    width: 300px;
+    align-items: flex-end;
+    margin: 8px;
+}
+
+.product-text-layout {
+    height: 80px;
+    width: 300px;
+    background-color: grey;
+    justify-content: flex-start;
+    cursor: default;
+}
+
+.product-info {
+    color: white;
+    background-color: inherit;
+    width: 200px;
+    height: 30px;
+    font-size: 30px;
+    margin-top: 22.5px;
+    margin-left: 20px;
+}
+
+.product-price {
+    float: right;
+    width: 50px;
+    height: 50px;
+    background-color: inherit;
+    margin-top: -40px;
+    margin-right: 20px;
+    text-align: center;
+    color: white;
+    margin-top: -29px;
+    font-size: 25px;
+}
+
+p {
+    margin-top: 2px;
+    margin-bottom: 0%;
+}
+
+.index-product .image {
+    width: 300px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+}
+
+.modal {
+    z-index: 99999;
+}
+
+.modal-left {
+    float: left;
+    width: 325px;
+}
+
+.modal-right {
+    float: right;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-image {
+    align-items: center;
+    width: 300px;
+}
+
+.title {
+    text-align: center;
+}
+
+
+/* INDEX PAGE*/
+
+/* ABOUT US */
+
+.questions {
+    margin-top: 25px;
+    display: flex;
+    height: 1200px;
+    width: auto;
+    background-color: blue;
+    justify-content: space-evenly;
+    align-items: flex-start;
+}
+
+.hidden-question {
+    position: absolute;
+
+}
+
+.who-are-we {
+    position: relative;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: red;
+    height: 100px;
+    width: 450px;
+    transition-duration: 200ms;
+    transition-delay: 20ms;
+}
+
+.what-do-we-do {
+    display: flex;
+    margin-top: 20px;
+    background-color: green;
+    height: 100px;
+    width: 450px;
+}
+
+.what-is-our-purpose {
+    display: flex;
+    margin-top: 20px;
+    background-color: yellow;
+    height: 100px;
+    width: 450px;
+}
+
+
+
+.who-are-we:hover {
+    display: flex;
+    background-color: red;
+    height: 1000px;
+    width: 450px;
+}
+
+
+/* ABOUT US */
